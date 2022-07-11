@@ -22,8 +22,8 @@ const userResolvers = {
   }),
 
   Query: {
-    users: (root, args, { dataSources }) => dataSources.usersAPI.getUsers(),
-    user: (root, { id }, { dataSources }) =>  dataSources.usersAPI.getUserById(id)
+    users: (_, args, { dataSources }) => dataSources.usersAPI.getUsers(args),
+    user: (_, { id }, { dataSources }) =>  dataSources.usersAPI.getUserById(id)
   },
   
   Mutation: {
