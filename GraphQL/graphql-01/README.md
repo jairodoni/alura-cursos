@@ -1,4 +1,4 @@
-# GrqphQL API
+# GraphQL API
 
 ### Projeto:
 
